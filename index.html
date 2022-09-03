@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100&display=swap&_v=20220903133800" rel="stylesheet">
+    <!-- JQUERY UI CSS -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css?_v=20220903133800">
+    <!-- icon -->
+    <link rel="icon" href="img/logo.png">
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="css/style.min.css?_v=20220903133800">
+    <title>EuroSport</title>
+</head>
+<body>
+
+        <header class="header">
+    <div class="container">
+        <div class="header-top">
+            <div class="header-top__logo">
+                <img src="img/EuroSport.png" alt="logo" class="header">
+            </div>
+            <div class="header-top__functionality">
+                <a href="#" class="header-top__actions">Акційні пропозиції</a>
+                <button class="header-top__phone-select">
+                    <i class="fa fa-rotate-90 fa-solid fa-phone header-top__phone-ring"></i>
+                    <span>098 457-13-45</span>
+                    <i class="fa fa-solid fa-chevron-down"></i>
+                    <ul class="header-top__phone-list">
+                        <li class="header-top__phone-item">
+                            <i class="fa fa-rotate-90 fa-solid fa-phone"></i>
+                            <span>050 369-40-40</span>
+                        </li>
+                        <li class="header-top__phone-item">
+                            <i class="fa fa-rotate-90 fa-solid fa-phone"></i>
+                            <span>063 474-60-89</span>
+                        </li>
+                        <li class="header-top__phone-item">
+                            <i class="fa fa-rotate-90 fa-solid fa-phone"></i>
+                            <span>093 452-15-25</span>
+                        </li>
+                    </ul>
+                </button>
+                <button class="header-top__cart-shopping">
+                    <i class="fa fa-solid fa-cart-arrow-down"></i>
+                    <span>0</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="header-wrapper">
+        <div class="container">
+            <div class="header-bottom">
+                <button class="header-bottom__menu">
+                    <span class="header-bottom__menu-icon-box">
+                        <div class="header-bottom__menu-element header-bottom__menu-element--rotated"></div>
+                        <div class="header-bottom__menu-element"></div>
+                    </span>
+                    <span class="header-bottom__menu-icon-x">
+                        <i class="fa fa-solid fa-close"></i>
+                    </span>
+                    <span class="header-bottom__menu-text">Каталог товарів</span>
+                </button>
+                <form action="#" class="search-form">
+                    <label class="search-form__serch" for="search">
+                        <svg class="search-form__icon">
+                            <use xlink:href="img/sprite.svg#icon-search"></use>
+                        </svg>
+                        <input type="text" id="search" class="ui-autocomplete-input search-form__search-box" placeholder="Мене цікавить...">
+                    </label>
+                    <button href="#" class="btn-primary search-form__btn">Знайти</button>
+                </form>
+                <div class="header-bottom__user-functionality">
+                    <a href="#" class="header-bottom__btn-lang">UA</a>
+                    <a href="#" class="header-bottom__btn-lang">RU</a>
+                    <button class="header-bottom__user">
+                        <svg class="header-bottom__user-icon">
+                            <use xlink:href="img/sprite.svg#icon-user"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom__menu-popup-container">
+                <div class="container">
+                        <div class="header-bottom__menu-popup">
+                            <ul class="header-bottom__menu-list">
+                                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link link-active"><span><i class="fa fa-solid fa-receipt"></i>Акційні пропозиції</span><i class="fa fa-solid fa-chevron-right"></i></a></li>
+                                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link"><span><i class="fa fa-solid fa-blender"></i>Харчування для спорту</span><i class="fa fa-solid fa-chevron-right"></i></a></li>
+                                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link"><span><i class="fa fa-solid fa-tshirt"></i>Одяг та білизна</span><i class="fa fa-solid fa-chevron-right"></i></a></li>
+                                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link"><span><i class="fa fa-solid fa-running"></i>Фітнес</span><i class="fa fa-solid fa-chevron-right"></i></a></li>
+                                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link"><span><i class="fa fa-solid fa-dumbbell"></i>Важка атлетика</span><i class="fa fa-solid fa-chevron-right"></i></a></li>
+                                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link"><span><i class="fa fa-solid fa-swimmer"></i>Плавання</span><i class="fa fa-solid fa-chevron-right"></i></a></li>
+                                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link"><span><i class="fa fa-solid fa-bell"></i>Бокс</span><i class="fa fa-solid fa-chevron-right"></i></a></li>
+                                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link"><span><i class="fa fa-solid fa-user-ninja"></i>ММА</span><i class="fa fa-solid fa-chevron-right"></i></a></li>
+                                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link"><span><i class="fa fa-solid fa-dragon"></i>Східні бойові мистецтва</span><i class="fa fa-solid fa-chevron-right"></i></a></li>
+                                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link"><span><i class="fa fa-solid fa-fish"></i>Риболовля</span><i class="fa fa-solid fa-chevron-right"></i></a></li>
+                                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link"><span><i class="fa fa-solid fa-tree"></i>Полювання</span><i class="fa fa-solid fa-chevron-right"></i></a></li>
+                            </ul>
+                            <div class="header-bottom__menu-box elem-visible">
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Акції на новинки
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Харчування для спорту</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Одяг та білизна</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Фітнес</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Важка атлетика</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Плавання</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Бокс</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">ММА</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Східні бойові мистецтва</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Риболовля</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Полювання</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Сезонні акції
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Харчування для спорту</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Одяг та білизна</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Фітнес</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Важка атлетика</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Плавання</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Бокс</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">ММА</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Східні бойові мистецтва</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Риболовля</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Полювання</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Уцінений товар
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Харчування для спорту</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Одяг та білизна</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Фітнес</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Важка атлетика</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Плавання</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Бокс</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">ММА</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Східні бойові мистецтва</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Риболовля</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Полювання</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-bottom__menu-box elem-invisible">
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Протеїн
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Сироватковий</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Соєвий</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Комплексний</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Яечний</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Казеїн</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Рисовий</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Гороховий</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Амінокислоти
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">BCAA</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Глютамін</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Аргінін</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Цетрин</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Лейцин</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Гейнери
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Високобілкові</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Високовуглеводні</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Вуглеводи(карбо)</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Вітаміни та добавки
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Йод</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Лецитин</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Омега 3-6-9</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Магній</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Ехінацея</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Креатин
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Моногідрат</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">З транспортною системою</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">В капсулах</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">У порошку</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Предтренувальні комплекси
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Для жінок</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Для чоловіків</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Після тренування</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-bottom__menu-box elem-invisible">
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Акції на новинки
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Харчування для спорту</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Одяг та білизна</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Фітнес</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Важка атлетика</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Плавання</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Бокс</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">ММА</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Східні бойові мистецтва</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Риболовля</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Полювання</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Сезонні акції
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Харчування для спорту</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Одяг та білизна</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Фітнес</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Важка атлетика</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Плавання</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Бокс</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">ММА</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Східні бойові мистецтва</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Риболовля</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Полювання</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Уцінений товар
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Харчування для спорту</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Одяг та білизна</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Фітнес</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Важка атлетика</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Плавання</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Бокс</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">ММА</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Східні бойові мистецтва</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Риболовля</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Полювання</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-bottom__menu-box elem-invisible">
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Протеїн
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Сироватковий</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Соєвий</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Комплексний</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Яечний</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Казеїн</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Рисовий</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Гороховий</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Амінокислоти
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">BCAA</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Глютамін</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Аргінін</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Цетрин</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Лейцин</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Гейнери
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Високобілкові</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Високовуглеводні</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Вуглеводи(карбо)</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Вітаміни та добавки
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Йод</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Лецитин</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Омега 3-6-9</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Магній</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Ехінацея</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Креатин
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Моногідрат</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">З транспортною системою</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">В капсулах</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">У порошку</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Предтренувальні комплекси
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Для жінок</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Для чоловіків</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Після тренування</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-bottom__menu-box elem-invisible">
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Акції на новинки
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Харчування для спорту</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Одяг та білизна</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Фітнес</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Важка атлетика</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Плавання</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Бокс</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">ММА</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Східні бойові мистецтва</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Риболовля</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Полювання</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Сезонні акції
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Харчування для спорту</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Одяг та білизна</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Фітнес</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Важка атлетика</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Плавання</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Бокс</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">ММА</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Східні бойові мистецтва</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Риболовля</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Полювання</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Уцінений товар
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Харчування для спорту</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Одяг та білизна</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Фітнес</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Важка атлетика</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Плавання</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Бокс</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">ММА</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Східні бойові мистецтва</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Риболовля</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Полювання</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-bottom__menu-box elem-invisible">
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Протеїн
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Сироватковий</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Соєвий</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Комплексний</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Яечний</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Казеїн</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Рисовий</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Гороховий</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Амінокислоти
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">BCAA</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Глютамін</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Аргінін</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Цетрин</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Лейцин</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Гейнери
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Високобілкові</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Високовуглеводні</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Вуглеводи(карбо)</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Вітаміни та добавки
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Йод</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Лецитин</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Омега 3-6-9</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Магній</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Ехінацея</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Креатин
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Моногідрат</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">З транспортною системою</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">В капсулах</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">У порошку</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Предтренувальні комплекси
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Для жінок</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Для чоловіків</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Після тренування</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-bottom__menu-box elem-invisible">
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Акції на новинки
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Харчування для спорту</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Одяг та білизна</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Фітнес</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Важка атлетика</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Плавання</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Бокс</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">ММА</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Східні бойові мистецтва</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Риболовля</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Полювання</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Сезонні акції
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Харчування для спорту</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Одяг та білизна</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Фітнес</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Важка атлетика</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Плавання</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Бокс</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">ММА</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Східні бойові мистецтва</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Риболовля</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Полювання</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Уцінений товар
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Харчування для спорту</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Одяг та білизна</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Фітнес</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Важка атлетика</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Плавання</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Бокс</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">ММА</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Східні бойові мистецтва</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Риболовля</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Полювання</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-bottom__menu-box elem-invisible">
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Протеїн
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Сироватковий</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Соєвий</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Комплексний</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Яечний</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Казеїн</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Рисовий</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Гороховий</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Амінокислоти
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">BCAA</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Глютамін</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Аргінін</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Цетрин</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Лейцин</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Гейнери
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Високобілкові</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Високовуглеводні</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Вуглеводи(карбо)</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Вітаміни та добавки
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Йод</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Лецитин</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Омега 3-6-9</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Магній</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Ехінацея</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Креатин
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Моногідрат</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">З транспортною системою</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">В капсулах</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">У порошку</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Предтренувальні комплекси
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Для жінок</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Для чоловіків</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Після тренування</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-bottom__menu-box elem-invisible">
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Акції на новинки
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Харчування для спорту</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Одяг та білизна</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Фітнес</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Важка атлетика</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Плавання</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Бокс</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">ММА</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Східні бойові мистецтва</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Риболовля</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Полювання</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Сезонні акції
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Харчування для спорту</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Одяг та білизна</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Фітнес</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Важка атлетика</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Плавання</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Бокс</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">ММА</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Східні бойові мистецтва</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Риболовля</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Полювання</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Уцінений товар
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Харчування для спорту</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Одяг та білизна</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Фітнес</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Важка атлетика</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Плавання</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Бокс</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">ММА</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Східні бойові мистецтва</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Риболовля</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Полювання</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-bottom__menu-box elem-invisible">
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Протеїн
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Сироватковий</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Соєвий</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Комплексний</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Яечний</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Казеїн</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Рисовий</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Гороховий</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Амінокислоти
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">BCAA</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Глютамін</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Аргінін</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Цетрин</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Лейцин</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Гейнери
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Високобілкові</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Високовуглеводні</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Вуглеводи(карбо)</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Вітаміни та добавки
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Йод</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Лецитин</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Омега 3-6-9</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Магній</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Ехінацея</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Креатин
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Моногідрат</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">З транспортною системою</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">В капсулах</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">У порошку</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Предтренувальні комплекси
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Для жінок</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Для чоловіків</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Після тренування</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-bottom__menu-box elem-invisible">
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Акції на новинки
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Харчування для спорту</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Одяг та білизна</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Фітнес</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Важка атлетика</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Плавання</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Бокс</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">ММА</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Східні бойові мистецтва</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Риболовля</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Полювання</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Сезонні акції
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Харчування для спорту</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Одяг та білизна</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Фітнес</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Важка атлетика</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Плавання</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Бокс</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">ММА</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Східні бойові мистецтва</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Риболовля</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Полювання</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-bottom__menu-box-block">
+                                    <div class="header-bottom__menu-box-header">
+                                        Уцінений товар
+                                    </div>
+                                    <ul class="header-bottom__menu-box-list">
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Харчування для спорту</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Одяг та білизна</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Фітнес</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Важка атлетика</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Плавання</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Бокс</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">ММА</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Східні бойові мистецтва</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Риболовля</a></li>
+                                        <li class="header-bottom__menu-box-item"><a href="#" class="header-bottom__menu-box-link">Полювання</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="content">
+                <!-- SIDE NAVIGATION -->
+                <nav class="side-nav">
+                    <div class="side-nav__container">
+                        <ul class="side-nav__menu-list">
+                            <li class="side-nav__menu-item"><a href="goods-list.html" class="side-nav__menu-link">Акційні пропозиції</a></li>
+                            <li class="side-nav__menu-item"><a href="goods-list.html" class="side-nav__menu-link">Харчування для спорту</a></li>
+                            <li class="side-nav__menu-item"><a href="goods-list.html" class="side-nav__menu-link">Одяг та білизна</a></li>
+                            <li class="side-nav__menu-item"><a href="goods-list.html" class="side-nav__menu-link">Фітнес</a></li>
+                            <li class="side-nav__menu-item"><a href="goods-list.html" class="side-nav__menu-link">Важка атлетика</a></li>
+                            <li class="side-nav__menu-item"><a href="goods-list.html" class="side-nav__menu-link">Плавання</a></li>
+                            <li class="side-nav__menu-item"><a href="goods-list.html" class="side-nav__menu-link">Бокс</a></li>
+                            <li class="side-nav__menu-item"><a href="goods-list.html" class="side-nav__menu-link">ММА</a></li>
+                            <li class="side-nav__menu-item"><a href="goods-list.html" class="side-nav__menu-link">Східні бойові мистецтва</a></li>
+                            <li class="side-nav__menu-item"><a href="goods-list.html" class="side-nav__menu-link">Риболовля</a></li>
+                            <li class="side-nav__menu-item"><a href="goods-list.html" class="side-nav__menu-link">Полювання</a></li>
+                        </ul>
+    
+                        <ul class="side-nav__menu-list">
+                            <li class="side-nav__menu-item"><a href="#" class="side-nav__menu-link">Умови доставки і оплати</a></li>
+                            <li class="side-nav__menu-item"><a href="#" class="side-nav__menu-link">Зв'язатися з нами</a></li>
+                            <li class="side-nav__menu-item"><a href="#" class="side-nav__menu-link">Адреса магазину</a></li>
+                        </ul>
+    
+                        <div class="social-icons">
+                            <p class="social-icons__text">Ми у соціальних мережах</p>
+                            <div class="social-icons__bar">
+                                <a href="#" class="social-icons__link"><i class="fa fa-brands fa-telegram"></i></a>
+                                <a href="#" class="social-icons__link"><i class="fa fa-brands fa-instagram"></i></a>
+                                <a href="#" class="social-icons__link"><i class="fa fa-brands fa-twitter"></i></a>
+                                <a href="#" class="social-icons__link"><i class="fa fa-brands fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+    
+                        <div class="side-nav__greet">
+                            <h3 class="h3">Добрий день!</h2>
+                            <p class="side-nav__text">Увійдіть, щоб купувати товари, отримувати знижки та бонуси.</p>
+                            <button href="#" class="btn-primary side-nav__btn">Увійдіть у особистий кабінет</button>
+                        </div>
+    
+                        <div class="side-nav__good-card">
+                            <h3 class="h3">Найбільшою популярністю на цьому тижні користувалися:</p>
+                            <div class="goods-card side-nav__best-good">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="#" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old goods-card__price-old--hidden">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual side-nav__best-price">7 999 &#8372;</span>
+                                <button class="goods-card__icon side-nav__good-icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                            <div class="goods-card side-nav__best-good">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="#" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old goods-card__price-old--hidden">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual side-nav__best-price">7 999 &#8372;</span>
+                                <button class="goods-card__icon side-nav__good-icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="side-nav__copywrite">
+                        &copy; 2022 Designed and developed by Didenko.dma.
+                    </div>
+
+                </nav>
+
+                <main class="main">
+                    <!-- SECTION TOP SLIDER -->
+                    <section class="top-slider">
+                        <div class="top-slider__container">
+                            <img src="img/slider-1-small.jpg" alt="Slider image 1" class="top-slider__img">
+                            <img src="img/slider-2-small.jpg" alt="Slider image 2" class="top-slider__img">
+                            <img src="img/slider-3-small.jpg" alt="Slider image 3" class="top-slider__img">
+                            <img src="img/slider-4-small.jpg" alt="Slider image 4" class="top-slider__img">
+                        </div>
+                    </section>
+
+                    <!-- SECTION ACTIONS -->
+                    <section class="actions">
+                        <h2 class="h2">Акційні пропозиції</h2>
+                        <div class="goods-cards-list">
+                            <div class="goods-card">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="E" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual goods-card__price-actual--promoted">7 999 &#8372;</span>
+                                <button class="goods-card__icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                            <div class="goods-card">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="E" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual goods-card__price-actual--promoted">7 999 &#8372;</span>
+                                <button class="goods-card__icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                            <div class="goods-card">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="E" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual goods-card__price-actual--promoted">7 999 &#8372;</span>
+                                <button class="goods-card__icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                            <div class="goods-card">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="E" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual goods-card__price-actual--promoted">7 999 &#8372;</span>
+                                <button class="goods-card__icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- MOST POPULAR -->
+                    <section class="most-popular">
+                        <h2 class="h2">Найчастіше купують</h2>
+                        <div class="goods-cards-list">
+                            <div class="goods-card">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="E" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old goods-card__price-old--hidden">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual">7 999 &#8372;</span>
+                                <button class="goods-card__icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                            <div class="goods-card">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="E" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual goods-card__price-actual--promoted">7 999 &#8372;</span>
+                                <button class="goods-card__icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                            <div class="goods-card">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="E" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old goods-card__price-old--hidden">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual">7 999 &#8372;</span>
+                                <button class="goods-card__icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                            <div class="goods-card">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="E" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old goods-card__price-old--hidden">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual">7 999 &#8372;</span>
+                                <button class="goods-card__icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- CATEGORIES -->
+                    <section class="categories">
+                        <h2 class="h2">Популярні категорії</h2>
+                        <div class="popular-categories">
+                            <div class="popular-categories__element popular-categories__element--1">
+                                <a href="" class="popular-categories__link">
+                                    <img src="img/category-1.jpg" class="popular-categories__image" alt="Category image 1">
+                                    <p class="popular-categories__text">Предтренувальні комплекси</p>
+                                </a>
+                            </div>
+                            <div class="popular-categories__element popular-categories__element--2">
+                                <a href="" class="popular-categories__link">
+                                    <img src="img/category-2.jpg" class="popular-categories__image" alt="Category image 2">
+                                    <p class="popular-categories__text">Акції на новинки</p>
+                                </a>
+                            </div>
+                            <div class="popular-categories__element popular-categories__element--3">
+                                <a href="" class="popular-categories__link">
+                                    <img src="img/category-3.jpg" class="popular-categories__image" alt="Category image 3">
+                                    <p class="popular-categories__text">Спорядження для важкої атлетики</p>
+                                </a>
+                            </div>
+                            <div class="popular-categories__element popular-categories__element--4">
+                                <a href="" class="popular-categories__link">
+                                    <img src="img/category-4.jpg" class="popular-categories__image" alt="Category image 4">
+                                    <p class="popular-categories__text">Все для фітнесу</p>
+                                </a>
+                            </div>
+                            <div class="popular-categories__element popular-categories__element--5">
+                                <a href="" class="popular-categories__link">
+                                    <img src="img/category-5.jpg" class="popular-categories__image" alt="Category image 5">
+                                    <p class="popular-categories__text">Одяг для спортсменів</p>
+                                </a>
+                            </div>
+                            <div class="popular-categories__element popular-categories__element--6">
+                                <a href="" class="popular-categories__link">
+                                    <img src="img/category-6.jpg" class="popular-categories__image" alt="Category image 6">
+                                    <p class="popular-categories__text">Спорядження для плавання</p>
+                                </a>
+                            </div>
+                            <div class="popular-categories__element popular-categories__element--7">
+                                <a href="" class="popular-categories__link">
+                                    <img src="img/category-7.jpg" class="popular-categories__image" alt="Category image 7">
+                                    <p class="popular-categories__text">Все для боксерів</p>
+                                </a>
+                            </div>
+                            <div class="popular-categories__element popular-categories__element--8">
+                                <a href="" class="popular-categories__link">
+                                    <img src="img/category-8.jpg" class="popular-categories__image" alt="Category image 8">
+                                    <p class="popular-categories__text">Спорядження для ММА</p>
+                                </a>
+                            </div>
+                            <div class="popular-categories__element popular-categories__element--9">
+                                <a href="" class="popular-categories__link">
+                                    <img src="img/category-9.jpg" class="popular-categories__image" alt="Category image 9">
+                                    <p class="popular-categories__text">Все для карате</p>
+                                </a>
+                            </div>
+                            <div class="popular-categories__element popular-categories__element--10">
+                                <a href="" class="popular-categories__link"><img src="img/category-10.jpg" class="popular-categories__image" alt="Category image 10">
+                                    <p class="popular-categories__text">Протеїн</p>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- NEW -->
+                    <section class="new">
+                        <h2 class="h2">Новинки</h2>
+                        <div class="goods-cards-list">
+                            <div class="goods-card">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="E" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old goods-card__price-old--hidden">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual">7 999 &#8372;</span>
+                                <button class="goods-card__icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                            <div class="goods-card">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="E" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual goods-card__price-actual--promoted">7 999 &#8372;</span>
+                                <button class="goods-card__icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                            <div class="goods-card">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="E" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old goods-card__price-old--hidden">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual">7 999 &#8372;</span>
+                                <button class="goods-card__icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                            <div class="goods-card">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="E" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old goods-card__price-old--hidden">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual">7 999 &#8372;</span>
+                                <button class="goods-card__icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- MOST ANTICIPATED -->
+                    <section class="anticipated">
+                        <h2 class="h2">Найбільш очікувані</h2>
+                        <div class="goods-cards-list">
+                            <div class="goods-card">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="E" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old goods-card__price-old--hidden">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual">7 999 &#8372;</span>
+                                <button class="goods-card__icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                            <div class="goods-card">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="E" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual goods-card__price-actual--promoted">7 999 &#8372;</span>
+                                <button class="goods-card__icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                            <div class="goods-card">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="E" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old goods-card__price-old--hidden">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual">7 999 &#8372;</span>
+                                <button class="goods-card__icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                            <div class="goods-card">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="E" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old goods-card__price-old--hidden">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual">7 999 &#8372;</span>
+                                <button class="goods-card__icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- BRANDS -->
+                    <section class="brands">
+                        <h2 class="h2">Ми пропонуємо продукцію відомих брендів</h2>
+                        <div class="brands-slider">
+                            <a href="#" class="brands-slider__link"><img src="img/brand-1.jpg" alt="Brands slider image 1" class="brands-slider__img"></a>
+                            <a href="#" class="brands-slider__link"><img src="img/brand-2.jpg" alt="Brands slider image 2" class="brands-slider__img"></a>
+                            <a href="#" class="brands-slider__link"><img src="img/brand-3.png" alt="Brands slider image 3" class="brands-slider__img"></a>
+                            <a href="#" class="brands-slider__link"><img src="img/brand-4.png" alt="Brands slider image 4" class="brands-slider__img"></a>
+                            <a href="#" class="brands-slider__link"><img src="img/brand-5.png" alt="Brands slider image 5" class="brands-slider__img"></a>
+                            <a href="#" class="brands-slider__link"><img src="img/brand-6.png" alt="Brands slider image 6" class="brands-slider__img"></a>
+                            <a href="#" class="brands-slider__link"><img src="img/brand-7.jpg" alt="Brands slider image 7" class="brands-slider__img"></a>
+                            <a href="#" class="brands-slider__link"><img src="img/brand-8.png" alt="Brands slider image 8" class="brands-slider__img"></a>
+                        </div>          
+                    </section>
+
+                    <!--  SEASON DISCOUNTS -->
+                    <section class="season-discounts">
+                        <h2 class="h2">Сезонні знижки</h2>
+                        <div class="goods-cards-list">
+                            <div class="goods-card">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="E" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old goods-card__price-old--hidden">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual">7 999 &#8372;</span>
+                                <button class="goods-card__icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                            <div class="goods-card">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="E" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual goods-card__price-actual--promoted">7 999 &#8372;</span>
+                                <button class="goods-card__icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                            <div class="goods-card">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="E" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old goods-card__price-old--hidden">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual">7 999 &#8372;</span>
+                                <button class="goods-card__icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                            <div class="goods-card">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="E" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old goods-card__price-old--hidden">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual">7 999 &#8372;</span>
+                                <button class="goods-card__icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--  DISCOUNT GOODS -->
+                    <section class="discount-goods">
+                        <h2 class="h2">Уцінені товари</h2>
+                        <div class="goods-cards-list">
+                            <div class="goods-card">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="E" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old goods-card__price-old--hidden">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual">7 999 &#8372;</span>
+                                <button class="goods-card__icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                            <div class="goods-card">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="E" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual goods-card__price-actual--promoted">7 999 &#8372;</span>
+                                <button class="goods-card__icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                            <div class="goods-card">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="E" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old goods-card__price-old--hidden">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual">7 999 &#8372;</span>
+                                <button class="goods-card__icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                            <div class="goods-card">
+                                <a href="#" class="goods-card__image">
+                                    <img src="img/good-1.jpg" alt="Good img">
+                                </a>
+                                <a href="E" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+                                <span class="goods-card__price-old goods-card__price-old--hidden">10 999 &#8372;</span>
+                                <span class="goods-card__price-actual">7 999 &#8372;</span>
+                                <button class="goods-card__icon"><i class="fa fa-solid fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </section>
+
+                </main>
+            </div>
+        </div>
+
+        <div class="user-enter-background" id="user-enter-background"></div>
+        <div class="user-enter-content" id="user-enter-content">
+            <h2 class="h2">Вхід</h2>
+            <form action="#" class="enter-form">
+                <label for="user-email" class="enter-form__label">
+                    Електронна адреса
+                </label>
+                <input type="email" id="user-email" class="enter-form__input" placeholder="example@mailbox.com" required>
+                <label for="user-password" class="enter-form__label">
+                    Пароль
+                </label>
+                <input type="password" id="user-password" class="enter-form__input" required>
+                <button type="submit" class="btn-primary enter-form__enter-btn">Увійти</button>
+                <a href="#" class="enter-form__register-btn">Зареєструватися</a>
+            </form>
+            <span class="enter-form__close" id="enter-close">
+                <i class="fa fa-solid fa-close"></i>
+            </span>
+        </div>
+
+    <!-- PRIMARY BTN -->
+    <!-- <a href="#" class="btn-primary">Найти</a> -->
+
+    <!-- CARD -->
+    <!-- <div class="goods-card">
+        <a href="#" class="goods-card__image">
+            <img src="img/good-1.jpg" alt="Good img">
+        </a>
+        <a href="E" class="goods-card__title">WHEY PROTEIN 80% Шоколад 920г</a>
+        <span class="goods-card__price-old goods-card__price-old--hidden">41 999 &#8372;</span>
+        <span class="goods-card__price-actual">41 999 &#8372;</span>
+        <button class="goods-card__icon"><i class="fa fa-solid fa-heart"></i></button>
+    </div> -->
+
+    <!-- FONT AWESOME -->
+
+    <script src="https://kit.fontawesome.com/0394a5040c.js?_v=20220903133800" crossorigin="anonymous"></script>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220903133800"></script>
+
+    
+    <!-- SLICK SLIDER -->
+    <script src="js/slick.min.js?_v=20220903133800"></script>
+
+    <!-- JQUERY UI -->
+    <script src="js/jquery-ui.min.js?_v=20220903133800"></script>
+    
+    <!-- SCRIPT JS -->
+    <script src="js/app.min.js?_v=20220903133800"></script>
+</body>
+</html>
